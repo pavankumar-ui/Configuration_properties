@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Welcome-Service   # Service name
+  boot:
+    admin:
+      client:
+        url: http://localhost:1112   # URL of the Admin server
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  # Expose all actuator endpoints
